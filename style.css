@@ -1,0 +1,40 @@
+#face {
+    position: relative;
+    top: 4em;
+    left: 4em;
+    width: 12.5em;
+    height: 12.5em;
+    background: lightblue;
+    border-radius: 1.25em;
+  }
+  
+  #left_eye, #right_eye, #mouth {
+    position: absolute;
+  }
+  
+  #left_eye, #right_eye {
+    animation: rotate 12s linear infinite;
+  }
+  
+  #left_eye {
+    top: 2em;
+    left: 0.75em;
+    width: 5.625em;
+  }
+  
+  #right_eye {
+    top: 2em;
+    left: 6.125em;
+    width: 5.625em;
+  }
+  
+  #mouth {
+    top: 7em;
+    left: 3.125em;
+    width: 6.25em;
+  }
+  
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
